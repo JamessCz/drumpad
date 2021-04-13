@@ -1,0 +1,24 @@
+{
+	"contentrating" : "Everyone",
+	"file" : "Klauzury.exe",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.27058823529411763 0.27058823529411763 0.27058823529411763"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Music" ],
+	"title" : "Drumpad",
+	"type" : "application",
+	"version" : 1,
+	"workshopid" : "2400661730",
+	"workshopurl" : "steam://url/CommunityFilePage/2400661730"
+}
