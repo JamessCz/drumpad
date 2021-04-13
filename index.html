@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#202729">
+  <meta name="author" content="Jakub Horáček">
+  <meta name="keywords" content="Jakub, Horáček, Drumpad, Klauzury, Drums">
+  <title>Drumpad</title>
+  <link rel="shortcut icon" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Exo:800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body onload="textFill()">
+
+  <span class="center">
+    <h1 class="nadpis">Drumpad</h1>
+    <h2 id="createdBy">Created by: <a href="http://jakubhoracek.8u.cz/" target="_blank">Jakub Horáček</a></h2>
+  </span>
+
+  <div class="obsah">
+
+    <div class="guidescreen">
+      <h2>How to play?</h2>
+      <ol>
+        <li>Press <span class="number">1</span> to play Closed Hi-Hat.</li>
+        <li>Press <span class="number">2</span> to play Snare.</li>
+        <li>Press <span class="number">3</span> to play Kick.</li>
+        <li>Press <span class="number">4</span> to play Tom 1.</li>
+        <li>Press <span class="number">5</span> to play Tom 2.</li>
+        <li>Press <span class="number">6</span> to play Floor Tom.</li>
+        <li>Press <span class="number">7</span> to play Crash.</li>
+        <li>Press <span class="number">8</span> to play Splash.</li>
+        <li>Press <span class="number">9</span> to play Ride.</li>
+      </ol>
+    </div>
+
+    <span class="displayPadscreen">
+    <div class="padscreen">
+      <button onclick="crash()" id="crash">7</button><button onclick="splash()" id="splash">8</button><button onclick="ride()" id="ride">9</button>
+      <button onclick="tomone()" id="tomone">4</button><button onclick="tomtwo()" id="tomtwo">5</button><button onclick="floor()" id="floor">6</button>
+      <button onclick="hihat()" id="hihat">1</button><button onclick="snare()" id="snare">2</button><button onclick="kick()" id="kick">3</button>
+    </div>
+    </span>
+
+    <div class="settings">
+      <h2>Settings</h2>
+      <ol>
+        <li><button onclick="hihatToggle()" id="hihatToggle">-</button>Hi-Hat Toggle</li>
+        <li><button onclick="rimToggle()" id="rimToggle">+</button>Snare/Rim Toggle</li>
+        <li><button onclick="record()" id="recordButton"><img src="images/recordButtonBlack.png" class="recordButtonIMG"></button><span class="recordLI">Record</span></li>
+        <li><button onclick="playPause()" id="playButton"><img src="images/playButton.png" class="playButtonIMG"></button><span class="playLI">Play</span></li>
+      </ol>
+    </div>
+
+    <div class="clearfloat"></div>
+
+    <div class="center">
+      <button id="previousORnext">Next</button>
+    </div>
+
+  </div>
+
+  <div class="tipsDIV">
+    <button class="showButton">Show Tips</button>
+
+    <div id="myTips">
+      <h2>Tips:</h2>
+      <p id="fillTip"></p>
+      <button onclick="textFill()" class="nextTip">Next Tip</button>
+    </div>
+    <div id="ksLogo">
+      <p>Sounds by: </p><a href="https://www.instagram.com/kalacsound/" target="_blank"><img src="images/kalacsound.png" class="kalacsound"></a>
+      <div class="clearfloat"></div>
+    </div>
+  </div>
+
+  <div class="displayNone">
+    <form name="d">
+      <input type="text" size="8" name="d2">
+      <input type="button" value="Start/Stop" onclick="startstoptimer()">
+      <input type="reset" onclick="resettimer()">
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

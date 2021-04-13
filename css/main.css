@@ -1,0 +1,831 @@
+body {
+  background-color: #212321;
+  font-family: 'Roboto',sans-serif;
+}
+
+.nadpis {
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 5px;
+  text-align: center;
+  color: white;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  font-size: 250%;
+  cursor: pointer;
+  width: 300px;
+}
+
+.nadpis:hover + #createdBy {
+  display: block;
+}
+
+.obsah {
+  width:100%;
+  text-align:center;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}
+
+.guidescreen {
+  float:left;
+  margin-left: 350px;
+  margin-top: 50px;
+  background-color: #323536;
+  color: #bdbcbc;
+  text-align: left;
+  width: 320px;
+  height: 370px;
+  border-radius: 5px;
+}
+
+.guidescreen h2 {
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+  margin-left: 25px;
+  margin-bottom: 0;
+}
+
+.guidescreen li {
+  list-style: none;
+  margin-top: 11px;
+}
+
+.number {
+  font-family: 'Exo', sans-serif;
+  color: orange;
+  font-size: 105%;
+}
+
+.padscreen {
+  display: inline-block;
+  margin:50px auto 0 auto;
+  background-color: #323536;
+  text-align: center;
+  width: 320px;
+  height: 370px;
+  border-radius: 5px;
+}
+
+.settings {
+  float:right;
+  margin-right: 350px;
+  margin-top: 50px;
+  background-color: #323536;
+  color: #bdbcbc;
+  text-align: left;
+  width: 320px;
+  height: 370px;
+  border-radius: 5px;
+}
+
+.settings h2 {
+  font-family: 'Raleway', sans-serif;
+  text-align: right;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 2px;
+  margin-right: 25px;
+  margin-bottom: 0;
+}
+
+.settings li {
+  list-style: none;
+  margin-top: 5px;
+}
+
+.clearfloat {
+  clear: both;
+}
+
+button {
+  width: 85px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  font-family: 'Exo', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  padding: 35px;
+  margin:10px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button:active {
+  background-color: orange;
+}
+
+.settings button {
+  width: 45px;
+  border: none;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  font-family: 'Exo', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 25px;
+  padding: 5px;
+  margin-right:10px;
+}
+
+#previousORnext {
+  display:none;
+  width: 160px;
+  height: 60px;
+  background-color: #323536;
+  border-radius: 5px;
+  color: #bdbcbc;
+  font-family: 'Roboto',sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 3px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  transition: 0.2s;
+}
+
+#previousORnext:hover {
+  background-color: white;
+  color: #323536;
+}
+
+#previousORnext:active {
+  background-color: orange;
+  color: black;
+}
+
+.tipsDIV {
+  text-align: center;
+}
+
+.showButton {
+  width: 120px;
+  height: 55px;
+  background-color: #323536;
+  border-radius: 5px;
+  color: #bdbcbc;
+  font-family: 'Roboto',sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 25px;
+  transition: 0.2s;
+}
+
+.showButton:hover {
+  background-color: white;
+  color: #323536;
+}
+
+.showButton:active {
+  background-color: orange;
+  color: black;
+}
+
+.nextTip {
+  width: 80px;
+  height: 25px;
+  border: 1px solid #bdbcbc;
+  background-color: #212321;
+  border-radius: 5px;
+  color: #bdbcbc;
+  font-family: 'Roboto',sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 3px;
+  transition: 0.2s;
+}
+
+.nextTip:active {
+  border: 1px solid #212321;
+  background-color: white;
+  color: #212321;
+}
+
+#myTips {
+  margin: auto;
+  display: none;
+  background-color: #323536;
+  color: #bdbcbc;
+  text-align: center;
+  width: 1210px;
+  height: 120px;
+  border-radius: 5px;
+}
+
+#myTips h2 {
+  padding-top: 15px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+#ksLogo {
+  text-align: center;
+  display:block;
+}
+
+#ksLogo p {
+  float: left;
+  color: white;
+  margin-top: 75px;
+  margin-right: 25px;
+  margin-left: 43%;
+}
+
+.kalacsound {
+  float: left;
+  margin-top: 25px;
+  width: 10%;
+}
+
+/*
+#recordButton {}
+
+#playButton {}
+*/
+
+.recordButtonIMG {
+  width: 50%;
+}
+
+.playButtonIMG {
+  width: 50%;
+}
+
+.displayNone {
+  display: none;
+}
+
+#createdBy {
+  display: none;
+  text-align: center;
+  color: #bdbcbc;
+  font-size: 20px;
+  border: 0px solid #323536;
+  background: #323536;
+  width: 300px;
+  border-radius: 5px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#createdBy a {
+  text-decoration: none;
+  color: white;
+  transition: 0.5s;
+}
+
+#createdBy a:hover {
+  color: orange;
+  text-decoration: underline;
+}
+
+#createdBy:hover {
+  display: block;
+}
+
+.eq {
+  display:none;
+}
+
+
+/*
+ ██████  ███    ███ ███████ ██████  ██  █████
+██    ██ ████  ████ ██      ██   ██ ██ ██   ██
+██ ██ ██ ██ ████ ██ █████   ██   ██ ██ ███████
+██ ██ ██ ██  ██  ██ ██      ██   ██ ██ ██   ██
+ █ ████  ██      ██ ███████ ██████  ██ ██   ██
+*/
+
+
+@media screen and (max-device-width: 1080px) {
+  /* Pro browsery menší než 1080px; */
+
+  .nadpis {
+    margin-top: 30px;
+  }
+
+  .guidescreen {
+    margin-left: 150px;
+    margin-top: 30px;
+  }
+
+  .padscreen {
+    margin: 30px auto 0 auto;
+  }
+
+  .settings {
+    margin-right: 150px;
+    margin-top: 30px;
+  }
+
+  #myTips {
+    height: 80px;
+  }
+
+  #myTips h2 {
+    padding-top: 15px;
+    text-align: left;
+    margin-left: 15px;
+  }
+
+  #fillTip {
+    margin-top: -35px;
+  }
+
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* Pro mobily */
+
+  .guidescreen {
+    display:block;
+    clear: left;
+    margin: 30px auto 0 15%;
+    text-align: left;
+    width: 245px;
+    height: 270px;
+  }
+
+  .guidescreen h2 {
+    text-align: center;
+  }
+
+  .guidescreen li {
+    margin-top: 3px;
+    font-size: 80%;
+  }
+
+  .displayPadscreen {
+    display: none;
+  }
+
+  .padscreen {
+    float:left;
+    margin: 0px 0 0 0;
+    width: 200px;
+    height: 195px;
+  }
+
+  button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    padding: 15px;
+    margin: 7px;
+  }
+
+  .settings {
+    display: none;
+    float: inherit;
+    margin-left: 210px;
+    margin-top: 60px;
+    text-align: left;
+    width: 148px;
+    height: 195px;
+    border-radius: 5px;
+  }
+
+  .settings h2 {
+    letter-spacing: 2px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    font-size: 99%;
+  }
+
+  .settings li {
+    list-style: none;
+    margin:0;
+    font-size: 80%;
+  }
+
+
+  .settings button {
+    width: 28px;
+    height: 28px;
+    font-size: 19px;
+    padding: 1px;
+    margin: 1.5px;
+  }
+
+  .settings ol {
+    margin: 8px 0 0 8px;
+    padding: 0;
+  }
+
+  #ksLogo p {
+    margin-top: 60px;
+    margin-right: 10px;
+    margin-left: 13%;
+  }
+
+  .kalacsound {
+    margin-top: 25px;
+    width: 45%;
+  }
+
+  .nextTip {
+    position: fixed;
+    margin: 0;
+    padding:0;
+    left: 40%;
+    bottom: 10%;
+  }
+
+  #myTips {
+    width: 245px;
+    height: 225px;
+  }
+
+  #myTips h2 {
+    padding-top: 15px;
+  }
+
+  #fillTip {
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  #previousORnext {
+    display:inline;
+  }
+
+}
+
+@media only screen and (max-device-width: 375px) {
+  /* Pro mobily */
+
+  .guidescreen {
+    display: block;
+    clear: left;
+    margin: 30px auto 0 15%;
+    text-align: left;
+    width: 245px;
+    height: 270px;
+  }
+
+  .guidescreen h2 {
+    text-align: center;
+  }
+
+  .guidescreen li {
+    margin-top: 3px;
+    font-size: 80%;
+  }
+
+  .displayPadscreen {
+    display: none;
+  }
+
+  .padscreen {
+    float: left;
+    margin: 10px 0 0 25px;
+    width: 140px;
+    height: 165px;
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 3px;
+    margin-top:10px;
+  }
+
+  .settings {
+    display: none;
+    float:inherit;
+    margin-left: 180px;
+    margin-top: 50px;
+    text-align: left;
+    width: 160px;
+    height: 180px;
+    border-radius: 5px;
+    padding: 0;
+  }
+
+  .settings h2 {
+    letter-spacing: 2px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    font-size: 99%;
+  }
+
+  .settings li {
+    list-style: none;
+    margin: 0;
+    font-size: 75%;
+  }
+
+
+  .settings button {
+    width: 25px;
+    height: 25px;
+    font-size: 19px;
+    padding: 1px;
+    margin: 1.5px;
+  }
+
+  .settings ol {
+    margin: 8px 0 0 8px;
+    padding: 0;
+  }
+
+  #ksLogo p {
+    margin-top: 60px;
+    margin-right: 10px;
+    margin-left: 13%;
+  }
+
+  .kalacsound {
+    margin-top: 25px;
+    width: 45%;
+  }
+
+  .nextTip {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    left: 40%;
+    bottom: 10%;
+  }
+
+  #myTips {
+    width: 245px;
+    height: 225px;
+  }
+
+  #myTips h2 {
+    padding-top: 15px;
+  }
+
+  #fillTip {
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  #previousORnext {
+    display: inline;
+  }
+
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* Pro mobily */
+
+  .guidescreen {
+    display:block;
+    clear: left;
+    margin: 30px auto 0 15%;
+    text-align: left;
+    width: 245px;
+    height: 270px;
+  }
+
+  .guidescreen h2 {
+    text-align: center;
+  }
+
+  .guidescreen li {
+    margin-top: 3px;
+    font-size: 80%;
+  }
+
+  .displayPadscreen {
+    display: none;
+  }
+
+  .padscreen {
+    float:left;
+    margin: 0px 0 0 0;
+    width: 200px;
+    height: 195px;
+  }
+
+  button {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    padding: 15px;
+    margin: 7px;
+  }
+
+  .settings {
+    display: none;
+    float: inherit;
+    margin-left: 210px;
+    margin-top: 60px;
+    text-align: left;
+    width: 148px;
+    height: 195px;
+    border-radius: 5px;
+  }
+
+  .settings h2 {
+    letter-spacing: 2px;
+    margin-right: 15px;
+    margin-bottom: 0;
+    font-size: 99%;
+  }
+
+  .settings li {
+    list-style: none;
+    margin:0;
+    font-size: 80%;
+  }
+
+
+  .settings button {
+    width: 28px;
+    height: 28px;
+    font-size: 19px;
+    padding: 1px;
+    margin: 1.5px;
+  }
+
+  .settings ol {
+    margin: 8px 0 0 8px;
+    padding: 0;
+  }
+
+  #ksLogo p {
+    margin-top: 60px;
+    margin-right: 10px;
+    margin-left: 13%;
+  }
+
+  .kalacsound {
+    margin-top: 25px;
+    width: 45%;
+  }
+
+  .nextTip {
+    position: fixed;
+    margin: 0;
+    padding:0;
+    left: 40%;
+    bottom: 10%;
+  }
+
+  #myTips {
+    width: 245px;
+    height: 225px;
+  }
+
+  #myTips h2 {
+    padding-top: 15px;
+  }
+
+  #fillTip {
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  #previousORnext {
+    display:inline;
+  }
+
+}
+
+@media only screen and (max-device-width: 375px) {
+  /* Pro mobily */
+
+  .guidescreen {
+    display: block;
+    clear: left;
+    margin: 30px auto 0 15%;
+    text-align: left;
+    width: 245px;
+    height: 270px;
+  }
+
+  .guidescreen h2 {
+    text-align: center;
+  }
+
+  .guidescreen li {
+    margin-top: 3px;
+    font-size: 80%;
+  }
+
+  .displayPadscreen {
+    display: none;
+  }
+
+  .padscreen {
+    float: left;
+    margin: 10px 0 0 25px;
+    width: 140px;
+    height: 165px;
+  }
+
+  button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+    margin: 3px;
+    margin-top:10px;
+  }
+
+  .settings {
+    display: none;
+    float:inherit;
+    margin-left: 180px;
+    margin-top: 50px;
+    text-align: left;
+    width: 160px;
+    height: 180px;
+    border-radius: 5px;
+    padding: 0;
+  }
+
+  .settings h2 {
+    letter-spacing: 2px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    font-size: 99%;
+  }
+
+  .settings li {
+    list-style: none;
+    margin: 0;
+    font-size: 75%;
+  }
+
+
+  .settings button {
+    width: 25px;
+    height: 25px;
+    font-size: 19px;
+    padding: 1px;
+    margin: 1.5px;
+  }
+
+  .settings ol {
+    margin: 8px 0 0 8px;
+    padding: 0;
+  }
+
+  #ksLogo p {
+    margin-top: 60px;
+    margin-right: 10px;
+    margin-left: 13%;
+  }
+
+  .kalacsound {
+    margin-top: 25px;
+    width: 45%;
+  }
+
+  .nextTip {
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    left: 40%;
+    bottom: 10%;
+  }
+
+  #myTips {
+    width: 245px;
+    height: 225px;
+  }
+
+  #myTips h2 {
+    padding-top: 15px;
+  }
+
+  #fillTip {
+    margin-top: 5%;
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+
+  #previousORnext {
+    display: inline;
+  }
+
+}
